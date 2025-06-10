@@ -1,0 +1,64 @@
+.ProductCard{
+    width: 100%;
+    max-width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative; 
+    transition: all 0.3s ease;
+}
+
+.ProductCard:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ProductCard:hover .ButtonAddCart{
+    opacity: 1;
+    visibility: visible;
+}
+
+.CardImage{
+    width: 100%;
+}
+
+.CardInfos{
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.CardPrice{
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.CardTitle{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+    font-weight: 500px;
+}
+
+.ButtonAddCart{
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 45px;
+    height: 45px;
+    margin: 12px 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(11, 121, 158);
+    background-color: rgba(255, 255, 255, 0.8j);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
