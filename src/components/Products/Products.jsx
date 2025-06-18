@@ -16,8 +16,10 @@ function Products() {
     console.log(products); 
 
     return(
-        <section className="Products TopContainer">
-            <ProductCard/>
+        <section className="Products TopContainer"> 
+            {
+                products.map((product) => <ProductCard key={product.id} data={product} />)
+            }
         </section>
     )
 }
