@@ -1,11 +1,15 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import { IoMdSearch } from "react-icons/io";    
 
 import "./SearchBar.css"
+import AppContext from "../../context/AppContext";
 
 function SearchBar () {
 
     const [searchValue, setValue] = useState("")
+
+    const {setProducts} = useContext(AppContext)
+     
     const handleSearch = (event) => {
         event.preventDefault(); 
         alert("teste"); 
